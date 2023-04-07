@@ -11,7 +11,7 @@ def gen_rand_string():
     return rand_string
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='function')
 def browser_steps():
     browser.config.window_width = 1600
     browser.config.window_height = 900
