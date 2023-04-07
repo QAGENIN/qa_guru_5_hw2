@@ -7,7 +7,7 @@ import string
 @pytest.fixture(scope='function')
 def gen_rand_string():
     letters = string.ascii_lowercase
-    rand_string = ''.join(random.sample(letters, 16))
+    rand_string = ''.join(random.sample(letters, 20))
     return rand_string
 
 
